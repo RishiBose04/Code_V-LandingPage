@@ -6,10 +6,8 @@ import { boldOnepage } from "@/data/menu";
 import ParallaxContainer from "@/components/common/ParallaxContainer";
 
 export const metadata = {
-  title:
-    "Home 2 Main Demo Onepage Dark || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
-  description:
-    "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+  title: "Code_V",
+  description: "Code_V landing page",
 };
 
 export default function Home() {

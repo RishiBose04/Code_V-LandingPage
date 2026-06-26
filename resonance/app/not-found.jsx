@@ -3,10 +3,8 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 export const metadata = {
-  title:
-    "Page Not Found || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
-  description:
-    "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+  title: "Code_V",
+  description: "Code_V landing page",
 };
 export default function MainAboutPage1() {
   return (
@@ -22,17 +20,17 @@ export default function MainAboutPage1() {
                 <div className="nav-logo-wrap local-scroll">
                   <Link href={`/`} className="logo">
                     <Image
-                      src="/assets/images/logo-white.svg"
-                      alt="Your Company Logo"
-                      width={105}
-                      height={34}
+                      src="/assets/images/Code_V_Logo.png"
+                      alt="Code_V Logo"
+                      width={140}
+                      height={44}
                       className="logo-white"
                     />
                     <Image
-                      src="/assets/images/logo-dark.svg"
-                      alt="Your Company Logo"
-                      width={105}
-                      height={34}
+                      src="/assets/images/Code_V_Logo.png"
+                      alt="Code_V Logo"
+                      width={140}
+                      height={44}
                       className="logo-dark"
                     />
                   </Link>

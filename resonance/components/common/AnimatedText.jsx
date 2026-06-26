@@ -2,6 +2,7 @@ import React from "react";
 
 export default function AnimatedText({
   text = "Grow your business with a new website.",
+  style = {},
 }) {
   return (
     <>
@@ -13,6 +14,8 @@ export default function AnimatedText({
           "--word-total": text.split(" ").length,
           "--char-total": text.split("").length,
           visibility: "visible",
+          textTransform: "none",
+          ...style,
         }}
       >
         {text
@@ -23,14 +26,14 @@ export default function AnimatedText({
               <span
                 className="word"
                 data-word="Grow"
-                style={{ "--word-index": i }}
+                style={{ "--word-index": i, textTransform: "none" }}
               >
                 {elm.split("").map((elm2, i2) => (
                   <span
                     key={i2}
                     className="char"
                     data-char="G"
-                    style={{ "--char-index": i + i2 }}
+                    style={{ "--char-index": i + i2, textTransform: "none" }}
                   >
                     {elm2}
                   </span>

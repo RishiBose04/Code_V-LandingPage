@@ -3,12 +3,7 @@ import React, { useEffect, useState } from "react";
 import { portfolios2 } from "@/data/portfolio";
 import Image from "next/image";
 import Link from "next/link";
-const filters = [
-  { name: "All works", category: "all" },
-  { name: "Branding", category: "branding" },
-  { name: "Design", category: "design" },
-  { name: "Development", category: "development" },
-];
+const filters = [{ name: "Portfolio", category: "all" }];
 
 export default function Portfolio({ desc }) {
   const [currentCategory, setCurrentCategory] = useState("all");
@@ -19,8 +14,8 @@ export default function Portfolio({ desc }) {
     } else {
       setFiltered(
         [...portfolios2].filter((elm) =>
-          elm.categories.includes(currentCategory)
-        )
+          elm.categories.includes(currentCategory),
+        ),
       );
     }
   }, [currentCategory]);
@@ -44,15 +39,9 @@ export default function Portfolio({ desc }) {
           {/* Works Filter */}
           <div className="works-filter works-filter-bold text-start text-lg-end w-100">
             {filters.map((elm, i) => (
-              <a
-                onClick={() => setCurrentCategory(elm.category)}
-                key={i}
-                className={`filter ${
-                  currentCategory == elm.category ? "active" : ""
-                }`}
-              >
+              <span key={i} className="filter active">
                 {elm.name}
-              </a>
+              </span>
             ))}
           </div>
           {/* End Works Filter */}
@@ -65,7 +54,7 @@ export default function Portfolio({ desc }) {
           <div
             key={index}
             className={`portfolio-2-item mb-100 mb-sm-50 mix ${item.categories.join(
-              " "
+              " ",
             )}`}
           >
             <div className="row">

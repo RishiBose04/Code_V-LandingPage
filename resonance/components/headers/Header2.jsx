@@ -20,20 +20,31 @@ export default function Header2({ links }) {
               If you use a PNG logo image, the image resolution must be equal 200% of the visible logo
               image size for support of retina screens. See details in the template documentation. *) */}
       <div className="nav-logo-wrap local-scroll">
-        <Link href="/" className="logo font-alt">
+        <Link href="/" className="logo font-alt flex items-center gap-0">
+          {/* Text before the logo image */}
+          <span
+            className="logo-text tracking-tight"
+            style={{ fontSize: "2rem", display: "inline-block" }}
+          >
+            Code_
+          </span>
+
+          {/* Light Mode Logo */}
           <Image
-            src="/assets/images/logo-dark.svg"
-            alt="Your Company Logo"
-            width={105}
-            height={34}
-            className="light-mode-logo"
+            src="/assets/images/Code_V_Logo.png"
+            alt="Code_V Logo"
+            width={30}
+            height={30}
+            className="light-mode-logo inline-block align-middle"
           />
+
+          {/* Dark Mode Logo */}
           <Image
-            src="/assets/images/logo-white.svg"
-            alt="Your Company Logo"
-            width={105}
-            height={34}
-            className="dark-mode-logo"
+            src="/assets/images/Code_V_LogoEdited.png"
+            alt="Code_V Logo"
+            width={30}
+            height={30}
+            className="dark-mode-logo inline-block align-middle"
           />
         </Link>
       </div>

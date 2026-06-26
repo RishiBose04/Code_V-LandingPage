@@ -9,10 +9,8 @@ import { allPortfolios } from "@/data/portfolio";
 import React from "react";
 import ParallaxContainer from "@/components/common/ParallaxContainer";
 export const metadata = {
-  title:
-    "Bold Portfolio Single Dark || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
-  description:
-    "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+  title: "Code_V",
+  description: "Code_V landing page",
 };
 const onePage = false;
 const dark = true;

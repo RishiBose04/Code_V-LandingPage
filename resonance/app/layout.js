@@ -44,6 +44,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="no-mobile no-touch ">
       <head>
+        <link rel="icon" href="/assets/images/Code_V_Logo.png" />
         <link
           href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
           rel="stylesheet"

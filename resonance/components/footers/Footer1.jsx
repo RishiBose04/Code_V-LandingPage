@@ -25,19 +25,19 @@ export default function Footer1({ dark = false }) {
           <div className="col-md-4 col-lg-3 text-gray mb-sm-50">
             <Link href={"/"} className="mb-30">
               <Image
-                src="/assets/images/logo-dark.svg"
-                width={105}
-                height={34}
+                src="/assets/images/Code_V_Logo.png"
+                width={140}
+                height={44}
                 className="light-mode-logo"
-                alt="Your Company Logo"
+                alt="Code_V Logo"
               />
 
               <Image
-                src="/assets/images/logo-white.svg"
-                width={105}
-                height={34}
+                src="/assets/images/Code_V_Logo.png"
+                width={140}
+                height={44}
                 className="dark-mode-logo"
-                alt="Your Company Logo"
+                alt="Code_V Logo"
               />
             </Link>
             <p>

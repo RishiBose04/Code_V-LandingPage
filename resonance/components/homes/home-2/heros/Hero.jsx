@@ -29,9 +29,37 @@ export default function Hero() {
           </h2>
           <h1
             className="hs-title-4 hero-main-title font-alt mb-60 mb-sm-40"
-            style={{ position: "relative" }}
+            style={{
+              position: "relative",
+              display: "inline-flex",
+              alignItems: "center",
+              justifyContent: "center",
+              flexWrap: "wrap",
+              textTransform:
+                "none" /* Bypasses the template's global uppercase rule */,
+            }}
           >
-            <AnimatedText text="Code_V" />
+            {/* 1. Animated 'Code_' Text */}
+            <AnimatedText text="Code_" style={{ textTransform: "none" }} />
+
+            {/* 2. Custom Unique 'V' */}
+            <span
+              className="unique-v-letter"
+              style={{
+                fontSize:
+                  "1.35em" /* Slightly larger to emphasize the default V */,
+                fontWeight: "bold" /* Matches the weight of your title */,
+                marginLeft:
+                  "1px" /* Slightly pushed out so the glow doesn't overlap the underscore */,
+                textTransform: "uppercase" /* Keeps just the 'V' capitalized */,
+                color: "#ffffff",
+                display: "inline-block",
+                /* Intense, sharp neon glow */
+                textShadow: "0 0 20px white",
+              }}
+            >
+              V
+            </span>
             <br />
             {/* <AnimatedText text=" Based in Melburn." /> */}
           </h1>

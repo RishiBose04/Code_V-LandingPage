@@ -42,14 +42,12 @@ export default function Home2({ onePage = false, dark = false }) {
                   <span className="text-outline">About</span>
                 </h2>
                 <p className="section-text mb-60 mb-md-40 mb-sm-30">
-                  <span className="section-title-inline">Who?</span> The role of
-                  the graphic designer in the communication process is that of
-                  encoder or interpreter of&nbsp;the message. They work on the
-                  interpretation, ordering, and presentation of visual messages.
-                  The design work always starts from a client's demand, a demand
-                  that ends up being established linguistically, either orally
-                  or in writing, that is, that graphic design transforms a
-                  linguistic message into a graphic manifestation.
+                  <span className="section-title-inline">Who?</span> We are a
+                  growing game studio powered by passionate designers,
+                  developers, and artists. We create high-quality mobile and PC
+                  games with a strong focus on fun, gameplay, and immersive
+                  experiences. From early concepts to final launch, we turn
+                  ideas into engaging games players enjoy and remember.
                 </p>
                 <div className="local-scroll">
                   {onePage ? (
@@ -98,14 +96,14 @@ export default function Home2({ onePage = false, dark = false }) {
       <div className="page-section overflow-hidden">
         <Experience />
       </div>
-      <section
+      {/* <section
         className={`page-section scrollSpysection  pt-0  ${
           dark ? "bg-dark-1 light-content" : ""
         } `}
         id="awards"
       >
         <Awards />
-      </section>
+      </section> */}
       <hr
         className={`${dark ? "white opacity-015" : "black"} black mt-0 mb-0"`}
       />
@@ -212,6 +210,70 @@ export default function Home2({ onePage = false, dark = false }) {
       <hr
         className={`${dark ? "white opacity-015" : "black"} black mt-0 mb-0"`}
       />
+      <section
+        className={`page-section scrollSpysection ${
+          dark ? "bg-dark-1 light-content" : ""
+        }`}
+        id="blog"
+      >
+        <div className="container">
+          <div className="row align-items-end mb-50">
+            <div className="col-lg-5 mb-md-30">
+              <h2 className="section-title-medium font-alt text-outline-cont mt-20 mb-0">
+                <span className="text-outline-2">Blog</span>
+                <span className="text-outline-1">Blog</span>
+                <span className="text-outline">Blog</span>
+              </h2>
+            </div>
+            <div className="col-lg-7">
+              <p className="section-text mb-0">
+                Insights, updates, and stories from our studio.
+              </p>
+            </div>
+          </div>
+          <div className="row">
+            {[
+              {
+                title: "Designing memorable game moments",
+                text: "A look at how strong visual storytelling shapes player emotion and engagement.",
+              },
+              {
+                title: "Building better player journeys",
+                text: "How clear flow and thoughtful interaction design make games more intuitive.",
+              },
+              {
+                title: "From concept to launch",
+                text: "The steps we take to turn an idea into a polished, playable experience.",
+              },
+            ].map((post, index) => (
+              <div className="col-md-4 mb-30" key={index}>
+                <div
+                  className="p-30 rounded-3"
+                  style={{ backgroundColor: dark ? "#171717" : "#f5f5f5" }}
+                >
+                  <h3 className="font-alt mb-20">{post.title}</h3>
+                  <p className="mb-20">{post.text}</p>
+                  <Link
+                    href="#contact"
+                    className="link-hover-anim underline align-middle"
+                    data-link-animate="y"
+                  >
+                    <span className="link-strong link-strong-unhovered">
+                      Read more
+                    </span>
+                    <span
+                      className="link-strong link-strong-hovered"
+                      aria-hidden="true"
+                    >
+                      Read more
+                    </span>
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
       <hr
         className={`${dark ? "white opacity-015" : "black"} black mt-0 mb-0"`}
       />
