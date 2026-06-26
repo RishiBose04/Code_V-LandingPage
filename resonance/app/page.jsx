@@ -27,7 +27,7 @@ export default function Home() {
                 className="home-section bg-dark-alpha-60 light-content parallax-5 scrollSpysection"
                 style={{
                   backgroundImage:
-                    "url(/assets/images/full-width-images/section-bg-13.jpg)",
+                    "url(/assets/images/philip-oroni-VfOGf5RWkeg-unsplash1.jpg)",
                 }}
                 id="home"
               >
@@ -45,4 +45,3 @@ export default function Home() {
     </>
   );
 }
-
