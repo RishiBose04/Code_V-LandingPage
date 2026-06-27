@@ -3,7 +3,14 @@ import Footer2 from "@/components/footers/Footer2";
 import Header2 from "@/components/headers/Header2";
 import RelatedProject9 from "@/components/portfolio/relatedProjects/RelatedProject9";
 import Image from "next/image";
-import { boldMultipage, boldMultipageDark } from "@/data/menu";
+const portfolioNav = [
+  { href: "/#home", text: "Home" },
+  { href: "/#about", text: "About" },
+  { href: "/#services", text: "Services" },
+  { href: "/#portfolio", text: "Portfolio" },
+  { href: "/#blog", text: "Blog" },
+  { href: "/#contact", text: "Contact" },
+];
 import dynamic from "next/dynamic";
 import { allPortfolios } from "@/data/portfolio";
 import React from "react";
@@ -24,7 +31,7 @@ export default async function BoldPortfolioSinglePageDark(props) {
         <div className="dark-mode">
           <div className="page" id="top">
             <nav className="main-nav dark transparent stick-fixed wow-menubar">
-              <Header2 links={boldMultipageDark} />
+              <Header2 links={portfolioNav} />
             </nav>
             <main id="main">
               <ParallaxContainer

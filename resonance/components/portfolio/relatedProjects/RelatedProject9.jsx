@@ -10,7 +10,7 @@ export default function RelatedProject9() {
         <span className="text-outline">Next Project</span>
       </h2>
       {/* Portfolio Item */}
-      {portfolios2.slice(4, 5).map((item, index) => (
+      {portfolios2.slice(1, 2).map((item, index) => (
         <div
           key={index}
           className={`portfolio-2-item mb-100 mb-sm-50 mix ${item.categories.join(
@@ -22,7 +22,7 @@ export default function RelatedProject9() {
               <>
                 <div className="col-md-8 mb-sm-30 order-md-first">
                   <div className="portfolio-2-image">
-                    <Link href={`/bold-portfolio-single-dark/${item.id}`}>
+                    <Link href={item.externalUrl || `/bold-portfolio-single-dark/${item.id}`} target={item.externalUrl ? "_blank" : undefined} rel={item.externalUrl ? "noopener noreferrer" : undefined}>
                       <Image
                         width={1200}
                         height={819}
@@ -35,7 +35,7 @@ export default function RelatedProject9() {
                 <div className={`col-md-4  `}>
                   <hr className="black thick mt-0 mb-20 d-none d-md-block" />
                   <h3 className="portfolio-2-title font-alt mb-20">
-                    <Link href={`/bold-portfolio-single-dark/${item.id}`}>
+                    <Link href={item.externalUrl || `/bold-portfolio-single-dark/${item.id}`} target={item.externalUrl ? "_blank" : undefined} rel={item.externalUrl ? "noopener noreferrer" : undefined}>
                       {item.title}
                     </Link>
                   </h3>
@@ -64,7 +64,7 @@ export default function RelatedProject9() {
                 <div className={`col-md-4`}>
                   <hr className="black thick mt-0 mb-20 d-none d-md-block" />
                   <h3 className="portfolio-2-title font-alt mb-20">
-                    <Link href={`/bold-portfolio-single-dark/${item.id}`}>
+                    <Link href={item.externalUrl || `/bold-portfolio-single-dark/${item.id}`} target={item.externalUrl ? "_blank" : undefined} rel={item.externalUrl ? "noopener noreferrer" : undefined}>
                       {item.title}
                     </Link>
                   </h3>
@@ -93,7 +93,7 @@ export default function RelatedProject9() {
                   } `}
                 >
                   <div className="portfolio-2-image">
-                    <Link href={`/bold-portfolio-single-dark/${item.id}`}>
+                    <Link href={item.externalUrl || `/bold-portfolio-single-dark/${item.id}`} target={item.externalUrl ? "_blank" : undefined} rel={item.externalUrl ? "noopener noreferrer" : undefined}>
                       <Image
                         width={1200}
                         height={819}

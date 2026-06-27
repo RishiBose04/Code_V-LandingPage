@@ -25,7 +25,7 @@ export const socialLinks = [
     text: "YouTube",
   },
   {
-    href: "#",
+    href: "https://www.linkedin.com/company/code-v-games/",
     text: "LinkedIn",
   },
 ];

@@ -35,6 +35,7 @@ export default function Header2({ links }) {
             alt="Code_V Logo"
             width={30}
             height={30}
+            style={{ width: 30, height: "auto" }}
             className="light-mode-logo inline-block align-middle"
           />
 
@@ -44,6 +45,7 @@ export default function Header2({ links }) {
             alt="Code_V Logo"
             width={30}
             height={30}
+            style={{ width: 30, height: "auto" }}
             className="dark-mode-logo inline-block align-middle"
           />
         </Link>
