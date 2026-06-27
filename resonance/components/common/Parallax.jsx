@@ -9,12 +9,5 @@ export default function ParallaxContainer(props) {
       speed: 0.5,
     });
   }, []);
-  return (
-    <div
-      //   ref={parallax.ref}
-      {...props}
-    >
-      {props.children}
-    </div>
-  );
+  return <div {...props}>{props.children}</div>;
 }

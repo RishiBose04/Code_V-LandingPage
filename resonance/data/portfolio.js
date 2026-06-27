@@ -144,47 +144,22 @@ export const portfolios2 = [
   {
     id: 15,
     imageUrl: "/assets/images/demo-bold/portfolio/1.jpg",
-    title: "Medium Scene",
+    title: "Color Drop",
     description:
-      "Lorem ipsum dolor siter amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore dolore magna aliqua.",
-    link: "bold-portfolio-single.html",
+      "A fun and addictive color-matching mobile game. Drop colors, match patterns, and challenge your reflexes.",
+    externalUrl:
+      "https://play.google.com/store/apps/details?id=com.shinigamistudios.colordrop",
     categories: ["development"],
   },
   {
     id: 16,
     imageUrl: "/assets/images/demo-bold/portfolio/2.jpg",
-    title: "Rise of Design",
+    title: "Fish Out",
     description:
-      "Proin elementum ipsum vel mauris pellentesque accumsan. Nulla in erat ligula vivamus sed egestas elit, sit amet convallis metus.",
-    link: "bold-portfolio-single.html",
-    categories: ["branding"],
-  },
-  {
-    id: 17,
-    imageUrl: "/assets/images/demo-bold/portfolio/3.jpg",
-    title: "Visual Stranger",
-    description:
-      "Suspendisse scelerisque convallis nibh. Maecenas bibendum porta mattis. Donec quis nibh porta dolor ultrices bibendum vel quis leo.",
-    link: "bold-portfolio-single.html",
-    categories: ["design", "development"],
-  },
-  {
-    id: 18,
-    imageUrl: "/assets/images/demo-bold/portfolio/4.jpg",
-    title: "Amplitude",
-    description:
-      "Aliquam tempus nunc nec rutrum malesuada. Proin pulvinar augue quis pharetra vulputate. Sed lacinia convallis orci vitae condimentum.",
-    link: "bold-portfolio-single.html",
-    categories: ["branding", "design"],
-  },
-  {
-    id: 19,
-    imageUrl: "/assets/images/demo-bold/portfolio/5.jpg",
-    title: "Super Awards",
-    description:
-      "Praesent est lacus, fringilla et justo vel, scelerisque aliquet elit. Mauris malesuada eleifend sapien irere semper a orci ac turpis luctus.",
-    link: "bold-portfolio-single.html",
-    categories: ["design", "development"],
+      "An immersive underwater adventure game by Code V. Dive deep, explore vibrant ocean worlds, and survive.",
+    externalUrl:
+      "https://play.google.com/store/apps/details?id=com.Code_V.ProjectFish",
+    categories: ["development"],
   },
 ];
 

@@ -17,7 +17,7 @@ export default function Footer2() {
         <div className="row">
           {/* Copyright */}
           <div className="col-lg-3 text-center text-lg-start mb-md-50">
-            © IB-Themes {new Date().getFullYear()}.
+            © Code V {new Date().getFullYear()}.
           </div>
           {/* End Copyright */}
           {/* Social Links */}

@@ -18,25 +18,16 @@ export default function Contact({ heading }) {
           </h2>
           <p className="section-text mb-60 mb-md-40 mb-sm-30">
             <span className="section-title-inline">How?</span> Have a question?
-            Just drop me a line via email or make a WhatsApp call. I am
-            available for new projects and interesting ideas.
+            Just drop us a line via email. Code V is available for new projects
+            and interesting ideas.
           </p>
           <div>
             <a
-              href="mailto:ibthemes21@gmail.com"
+              href="mailto:00codev00@gmail.com"
               className="link-hover-anim align-middle"
               data-link-animate="y"
             >
-              ibthemes21@gmail.com
-            </a>
-          </div>
-          <div>
-            <a
-              href="tel:+18376528800"
-              className="link-hover-anim align-middle"
-              data-link-animate="y"
-            >
-              +1 837 652 8800
+              00codev00@gmail.com
             </a>
           </div>
         </div>
