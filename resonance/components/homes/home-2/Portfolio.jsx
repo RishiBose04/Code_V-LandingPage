@@ -62,7 +62,16 @@ export default function Portfolio({ desc }) {
                 <>
                   <div className="col-md-8 mb-sm-30 order-md-first">
                     <div className="portfolio-2-image">
-                      <Link href={item.externalUrl || `/bold-portfolio-single-dark/${item.id}`} target={item.externalUrl ? "_blank" : undefined} rel={item.externalUrl ? "noopener noreferrer" : undefined}>
+                      <Link
+                        href={
+                          item.externalUrl ||
+                          `/bold-portfolio-single-dark/${item.id}`
+                        }
+                        target={item.externalUrl ? "_blank" : undefined}
+                        rel={
+                          item.externalUrl ? "noopener noreferrer" : undefined
+                        }
+                      >
                         <Image
                           width={1200}
                           height={819}
@@ -75,7 +84,16 @@ export default function Portfolio({ desc }) {
                   <div className={`col-md-4  `}>
                     <hr className="black thick mt-0 mb-20 d-none d-md-block" />
                     <h3 className="portfolio-2-title font-alt mb-20">
-                      <Link href={item.externalUrl || `/bold-portfolio-single-dark/${item.id}`} target={item.externalUrl ? "_blank" : undefined} rel={item.externalUrl ? "noopener noreferrer" : undefined}>
+                      <Link
+                        href={
+                          item.externalUrl ||
+                          `/bold-portfolio-single-dark/${item.id}`
+                        }
+                        target={item.externalUrl ? "_blank" : undefined}
+                        rel={
+                          item.externalUrl ? "noopener noreferrer" : undefined
+                        }
+                      >
                         {item.title}
                       </Link>
                     </h3>
@@ -104,7 +122,16 @@ export default function Portfolio({ desc }) {
                   <div className={`col-md-4`}>
                     <hr className="black thick mt-0 mb-20 d-none d-md-block" />
                     <h3 className="portfolio-2-title font-alt mb-20">
-                      <Link href={item.externalUrl || `/bold-portfolio-single-dark/${item.id}`} target={item.externalUrl ? "_blank" : undefined} rel={item.externalUrl ? "noopener noreferrer" : undefined}>
+                      <Link
+                        href={
+                          item.externalUrl ||
+                          `/bold-portfolio-single-dark/${item.id}`
+                        }
+                        target={item.externalUrl ? "_blank" : undefined}
+                        rel={
+                          item.externalUrl ? "noopener noreferrer" : undefined
+                        }
+                      >
                         {item.title}
                       </Link>
                     </h3>
@@ -133,7 +160,16 @@ export default function Portfolio({ desc }) {
                     } `}
                   >
                     <div className="portfolio-2-image">
-                      <Link href={item.externalUrl || `/bold-portfolio-single-dark/${item.id}`} target={item.externalUrl ? "_blank" : undefined} rel={item.externalUrl ? "noopener noreferrer" : undefined}>
+                      <Link
+                        href={
+                          item.externalUrl ||
+                          `/bold-portfolio-single-dark/${item.id}`
+                        }
+                        target={item.externalUrl ? "_blank" : undefined}
+                        rel={
+                          item.externalUrl ? "noopener noreferrer" : undefined
+                        }
+                      >
                         <Image
                           width={1200}
                           height={819}

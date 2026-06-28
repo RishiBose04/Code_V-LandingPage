@@ -1,19 +1,18 @@
 "use client";
 import { toggleMobileMenu } from "@/utlis/toggleMobileMenu";
 import Nav from "./components/Nav";
-
-const links = [
-  { href: "#home", text: "Home", className: "active" },
-  { href: "#about", text: "About" },
-  { href: "#services", text: "Services" },
-  { href: "#portfolio", text: "Portfolio" },
-  { href: "#blog", text: "Blog" },
-  { href: "#contact", text: "Contact" },
-];
 import Image from "next/image";
 import Link from "next/link";
 
+const defaultLinks = [
+  { href: "#home", text: "Home", className: "active" },
+  { href: "#about", text: "About" },
+  { href: "#portfolio", text: "Portfolio" },
+  { href: "#contact", text: "Contact" },
+];
+
 export default function Header2({ links }) {
+  const menuLinks = links?.length ? links : defaultLinks;
   return (
     <div className="main-nav-sub full-wrapper">
       {/* Logo  (* Add your text or image to the link tag. Use SVG or PNG image format. 
@@ -63,7 +62,7 @@ export default function Header2({ links }) {
       {/* Main Menu */}
       <div className="inner-nav desktop-nav">
         <ul className="clearlist scroll-nav local-scroll scrollspyLinks">
-          <Nav links={links} />
+          <Nav links={menuLinks} />
         </ul>
         <ul className="items-end clearlist local-scroll">
           <li>

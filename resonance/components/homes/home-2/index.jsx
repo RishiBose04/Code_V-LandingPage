@@ -1,7 +1,6 @@
 import React from "react";
 import Experience from "./Experience";
 import Awards from "./Awards";
-import Services from "./Services";
 import Portfolio from "./Portfolio";
 import Testimonials from "./Testimonials";
 import Contact from "./Contact";
@@ -52,7 +51,7 @@ export default function Home2({ onePage = false, dark = false }) {
                 <div className="local-scroll">
                   {onePage ? (
                     <a
-                      href="#services"
+                      href="#portfolio"
                       className="link-hover-anim underline align-middle"
                       data-link-animate="y"
                     >
@@ -104,93 +103,6 @@ export default function Home2({ onePage = false, dark = false }) {
       >
         <Awards />
       </section> */}
-      <hr
-        className={`${dark ? "white opacity-015" : "black"} black mt-0 mb-0"`}
-      />
-      <section
-        className={`page-section  scrollSpysection  ${
-          dark ? "bg-dark-1 light-content" : ""
-        } `}
-        id="services"
-      >
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-5 mb-md-80">
-              <h2 className="section-title-medium font-alt text-outline-cont mt-20 mb-50 mb-md-30">
-                <span className="text-outline-2">Services</span>
-                <span className="text-outline-1">Services</span>
-                <span className="text-outline">Services</span>
-              </h2>
-              <p className="section-text mb-60 mb-md-40 mb-sm-30">
-                <span className="section-title-inline">Why?</span> I use the
-                power of design to solve complex problems and cultivate business
-                solutions.
-              </p>
-              <div className="local-scroll">
-                {onePage ? (
-                  <>
-                    {" "}
-                    <a
-                      href="#contact"
-                      className="link-hover-anim underline align-middle"
-                      data-link-animate="y"
-                    >
-                      <span className="link-strong link-strong-unhovered">
-                        Request a quote
-                      </span>
-                      <span
-                        className="link-strong link-strong-hovered"
-                        aria-hidden="true"
-                      >
-                        Request a quote
-                      </span>
-                    </a>
-                  </>
-                ) : (
-                  <>
-                    <Link
-                      href={`/bold-contact${dark ? "-dark" : ""}`}
-                      className="link-hover-anim underline align-middle"
-                      data-link-animate="y"
-                    >
-                      <span className="link-strong link-strong-unhovered">
-                        Request a quote
-                      </span>
-                      <span
-                        className="link-strong link-strong-hovered"
-                        aria-hidden="true"
-                      >
-                        Request a quote
-                      </span>
-                    </Link>
-                  </>
-                )}
-              </div>
-            </div>
-            <div className="col-lg-7 col-xl-6 offset-xl-1">
-              {/* Accordion */}
-              <Faq />
-              {/* End Accordion */}
-            </div>
-          </div>
-          {/* Divider */}
-          <div className="page-section">
-            <hr
-              className={`${
-                dark ? "white opacity-015" : "black"
-              } black mt-0 mb-0"`}
-            />
-          </div>
-          {/* End Divider */}
-          {/* Steps */}
-
-          <Services />
-          {/* End Steps */}
-        </div>
-      </section>
-      <hr
-        className={`${dark ? "white opacity-015" : "black"} black mt-0 mb-0"`}
-      />
       <section
         className={`page-section  scrollSpysection  ${
           dark ? "bg-dark-1 light-content" : ""
@@ -207,76 +119,6 @@ export default function Home2({ onePage = false, dark = false }) {
       >
         <Testimonials />
       </section>
-      <hr
-        className={`${dark ? "white opacity-015" : "black"} black mt-0 mb-0"`}
-      />
-      <section
-        className={`page-section scrollSpysection ${
-          dark ? "bg-dark-1 light-content" : ""
-        }`}
-        id="blog"
-      >
-        <div className="container">
-          <div className="row align-items-end mb-50">
-            <div className="col-lg-5 mb-md-30">
-              <h2 className="section-title-medium font-alt text-outline-cont mt-20 mb-0">
-                <span className="text-outline-2">Blog</span>
-                <span className="text-outline-1">Blog</span>
-                <span className="text-outline">Blog</span>
-              </h2>
-            </div>
-            <div className="col-lg-7">
-              <p className="section-text mb-0">
-                Insights, updates, and stories from our studio.
-              </p>
-            </div>
-          </div>
-          <div className="row">
-            {[
-              {
-                title: "Designing memorable game moments",
-                text: "A look at how strong visual storytelling shapes player emotion and engagement.",
-              },
-              {
-                title: "Building better player journeys",
-                text: "How clear flow and thoughtful interaction design make games more intuitive.",
-              },
-              {
-                title: "From concept to launch",
-                text: "The steps we take to turn an idea into a polished, playable experience.",
-              },
-            ].map((post, index) => (
-              <div className="col-md-4 mb-30" key={index}>
-                <div
-                  className="p-30 rounded-3"
-                  style={{ backgroundColor: dark ? "#171717" : "#f5f5f5" }}
-                >
-                  <h3 className="font-alt mb-20">{post.title}</h3>
-                  <p className="mb-20">{post.text}</p>
-                  <Link
-                    href="#contact"
-                    className="link-hover-anim underline align-middle"
-                    data-link-animate="y"
-                  >
-                    <span className="link-strong link-strong-unhovered">
-                      Read more
-                    </span>
-                    <span
-                      className="link-strong link-strong-hovered"
-                      aria-hidden="true"
-                    >
-                      Read more
-                    </span>
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      <hr
-        className={`${dark ? "white opacity-015" : "black"} black mt-0 mb-0"`}
-      />
       <section
         className={`page-section  scrollSpysection  ${
           dark ? "bg-dark-1 light-content" : ""

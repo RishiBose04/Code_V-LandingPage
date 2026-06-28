@@ -6,9 +6,7 @@ import Image from "next/image";
 const portfolioNav = [
   { href: "/#home", text: "Home" },
   { href: "/#about", text: "About" },
-  { href: "/#services", text: "Services" },
   { href: "/#portfolio", text: "Portfolio" },
-  { href: "/#blog", text: "Blog" },
   { href: "/#contact", text: "Contact" },
 ];
 import dynamic from "next/dynamic";
@@ -68,90 +66,65 @@ export default async function BoldPortfolioSinglePageDark(props) {
                         <div className="block-sticky">
                           <h2 className="h3 mb-20">Project Details</h2>
                           <hr className="mb-20" />
-                          <div className="row small">
-                            <div className="col-sm-4">
-                              <b>Date:</b>
-                            </div>
-                            <div className="col-sm-8">May 1th, 2023</div>
-                          </div>
-                          <hr className="mb-20" />
-                          <div className="row small">
-                            <div className="col-sm-4">
-                              <b>Client:</b>
-                            </div>
-                            <div className="col-sm-8">Envato Users</div>
-                          </div>
-                          <hr className="mb-20" />
-                          <div className="row small">
-                            <div className="col-sm-4">
-                              <b>Services:</b>
-                            </div>
-                            <div className="col-sm-8">
-                              Branding, UI/UX Design, Front-end Development,
-                              Back-end Development
-                            </div>
-                          </div>
-                          <hr className="mb-20" />
-                          <div className="small">
-                            <div>
-                              <b>Description:</b>
-                            </div>
-                            <div>
-                              Lorem ipsum dolor sit amet conseur adipisci
-                              inerene. Maecenas volutpat, diam eni sagittis quam
-                              porta quam. Sed id dolor consectetur fermentum
-                              volutpat accumsan purus iaculis libero.
-                            </div>
-                          </div>
-                          <hr className="mb-20" />
+                          {portfolioItem.date && (
+                            <>
+                              <div className="row small">
+                                <div className="col-sm-4">
+                                  <b>Date:</b>
+                                </div>
+                                <div className="col-sm-8">
+                                  {portfolioItem.date}
+                                </div>
+                              </div>
+                              <hr className="mb-20" />
+                            </>
+                          )}
+
+                          {portfolioItem.description && (
+                            <>
+                              <div className="small">
+                                <div>
+                                  <b>Description:</b>
+                                </div>
+                                <div>{portfolioItem.description}</div>
+                              </div>
+                              <hr className="mb-20" />
+                            </>
+                          )}
                         </div>
                       </div>
                       {/* End Project Details */}
                       <div className="col-md-8">
                         <div className="mb-n30">
-                          {/* Photo Item */}
-                          <div
-                            className="mb-30 wow fadeInUp"
-                            data-wow-offset={0}
-                          >
-                            <Image
-                              src="/assets/images/demo-bold/portfolio/2.jpg"
-                              alt="Image Description"
-                              width={1200}
-                              height={819}
-                            />
-                          </div>
-                          {/* End Photo Item */}
-                          {/* Photo Item */}
-                          <div className="mb-30 wow fadeInUp">
-                            <Image
-                              src="/assets/images/demo-bold/portfolio/1.jpg"
-                              alt="Image Description"
-                              width={1200}
-                              height={819}
-                            />
-                          </div>
-                          {/* End Photo Item */}
-                          {/* Photo Item */}
-                          <div className="mb-30 wow fadeInUp">
-                            <Image
-                              src="/assets/images/demo-bold/portfolio/3.jpg"
-                              alt="Image Description"
-                              width={1200}
-                              height={819}
-                            />
-                          </div>
-                          {/* End Photo Item */}
-                          {/* Photo Item */}
-                          <div className="mb-30 wow fadeInUp">
-                            <Image
-                              src="/assets/images/demo-bold/portfolio/4.jpg"
-                              alt="Image Description"
-                              width={1200}
-                              height={819}
-                            />
-                          </div>
-                          {/* End Photo Item */}
+                          {portfolioItem.gallery &&
+                          portfolioItem.gallery.length > 0 ? (
+                            portfolioItem.gallery.map((src, i) => (
+                              <div className="mb-30 wow fadeInUp" key={i}>
+                                <Image
+                                  src={src}
+                                  alt={portfolioItem.title}
+                                  width={1200}
+                                  height={819}
+                                />
+                              </div>
+                            ))
+                          ) : (
+                            <div
+                              className="mb-30 wow fadeInUp"
+                              data-wow-offset={0}
+                            >
+                              <Image
+                                src={
+                                  portfolioItem.imageUrl ||
+                                  portfolioItem.imgSrc ||
+                                  "/assets/images/demo-bold/portfolio/1.jpg"
+                                }
+                                alt={portfolioItem.title}
+                                width={1200}
+                                height={819}
+                              />
+                            </div>
+                          )}
                         </div>
                       </div>
                     </div>

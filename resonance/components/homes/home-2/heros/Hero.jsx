@@ -1,5 +1,6 @@
 import AnimatedText from "@/components/common/AnimatedText";
 import React from "react";
+import Image from "next/image"; // Imported standard Next.js Image component for optimization
 
 export default function Hero() {
   return (
@@ -42,24 +43,24 @@ export default function Hero() {
             {/* 1. Animated 'Code_' Text */}
             <AnimatedText text="Code_" style={{ textTransform: "none" }} />
 
-            {/* 2. Custom Unique 'V' */}
-            <span
-              className="unique-v-letter"
+            {/* 2. Logo Image Replacement */}
+            <div
+              className="hero-logo-wrap d-inline-block"
               style={{
-                fontSize:
-                  "1.35em" /* Slightly larger to emphasize the default V */,
-                fontWeight: "bold" /* Matches the weight of your title */,
-                marginLeft:
-                  "1px" /* Slightly pushed out so the glow doesn't overlap the underscore */,
-                textTransform: "uppercase" /* Keeps just the 'V' capitalized */,
-                color: "#ffffff",
-                display: "inline-block",
-                /* Intense, sharp neon glow */
-                textShadow: "0 0 20px white",
+                marginLeft: "10px",
+                display: "flex",
+                alignItems: "center",
               }}
             >
-              V
-            </span>
+              <Image
+                src="/assets/images/Code_V_LogoEdited.png"
+                alt="Logo"
+                width={170}
+                height={170}
+                priority
+                style={{ objectFit: "contain" }}
+              />
+            </div>
             <br />
             {/* <AnimatedText text=" Based in Melburn." /> */}
           </h1>

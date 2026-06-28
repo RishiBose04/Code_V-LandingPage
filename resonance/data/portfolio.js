@@ -143,7 +143,15 @@ export const portfolios1 = [
 export const portfolios2 = [
   {
     id: 15,
-    imageUrl: "/assets/images/demo-bold/portfolio/1.jpg",
+    imageUrl: "/assets/images/Color Drop/1920x1080_CZG2.png",
+    gallery: [
+      "/assets/images/Color Drop/1920x1080_CZG2.png",
+      "/assets/images/Color Drop/NewSS1.png",
+      "/assets/images/Color Drop/NewSS2.png",
+      "/assets/images/Color Drop/NewSS3.png",
+      "/assets/images/Color Drop/NewSS4.png",
+      "/assets/images/Color Drop/NewSS5.png",
+    ],
     title: "Color Drop",
     description:
       "A fun and addictive color-matching mobile game. Drop colors, match patterns, and challenge your reflexes.",
@@ -153,8 +161,18 @@ export const portfolios2 = [
   },
   {
     id: 16,
-    imageUrl: "/assets/images/demo-bold/portfolio/2.jpg",
+    imageUrl: "/assets/images/Fish Out/GameIcon1.png",
+    gallery: [
+      "/assets/images/Fish Out/GameIcon1.png",
+      "/assets/images/Fish Out/PosterFishOut.png",
+      "/assets/images/Fish Out/Poster01Part05.png",
+      "/assets/images/Fish Out/Poster02Part02.png",
+      "/assets/images/Fish Out/Poster03Part02.png",
+      "/assets/images/Fish Out/Poster04part2.png",
+      
+    ],
     title: "Fish Out",
+    
     description:
       "An immersive underwater adventure game by Code V. Dive deep, explore vibrant ocean worlds, and survive.",
     externalUrl:

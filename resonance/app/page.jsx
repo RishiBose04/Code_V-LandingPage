@@ -24,8 +24,7 @@ export default function Home() {
               <ParallaxContainer
                 className="home-section bg-dark-alpha-60 light-content parallax-5 scrollSpysection"
                 style={{
-                  backgroundImage:
-                    "url(/assets/images/philip-oroni-VfOGf5RWkeg-unsplash1.jpg)",
+                  backgroundColor: "#000",
                 }}
                 id="home"
               >

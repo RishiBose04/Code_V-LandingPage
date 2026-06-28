@@ -13,16 +13,16 @@ export const footerLinks2 = [
 
 export const socialLinks = [
   {
-    href: "#",
+    href: "https://www.instagram.com/code_v_studio",
     text: "Instagram",
   },
   {
-    href: "#",
-    text: "Facebook",
+    href: "https://www.reddit.com/user/00_Code_V/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
+    text: "Reddit",
   },
   {
-    href: "#",
-    text: "YouTube",
+    href: "https://discord.com/invite/7hWMFRwp",
+    text: "Discord",
   },
   {
     href: "https://www.linkedin.com/company/code-v-games/",
@@ -50,8 +50,6 @@ export const socialMediaLinks = [
 
 export const navigationLinks = [
   { href: "#about", text: "About" },
-  { href: "#services", text: "Services" },
   { href: "#portfolio", text: "Portfolio" },
-  { href: "#blog", text: "Blog" },
   { href: "#contact", text: "Contact" },
 ];
