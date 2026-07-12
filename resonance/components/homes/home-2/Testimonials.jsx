@@ -41,22 +41,23 @@ export default function Testimonials() {
                         />
                       </div>
                       <p>
-                        Beautifull template, nice code and easy to customize.
-                        Optimization and structure are very good for seo basics.
+                        “Wow, it&apos;s such a nice game. I personally enjoy
+                        playing it. Whenever I feel tired, I play this game and
+                        find enjoyment in its engaging moments.”
                       </p>
                       <footer className="ts2-author mt-50 mt-xs-30 clearfix">
                         <div className="ts2-author-img float-start">
-                          <Image
+                          {/* <Image
                             className="rounded-circle"
                             width={44}
                             height={44}
                             src="/assets/images/ts1-user.jpg"
                             alt="Image description is here"
-                          />
+                          /> */}
                         </div>
                         <div className="overflow-hidden">
-                          Adam Peterson
-                          <div className="small">Business Owner</div>
+                          Kumari Priti
+                          <div className="small">Color Drop</div>
                         </div>
                       </footer>
                     </blockquote>

@@ -3,6 +3,7 @@ import React from "react";
 export default function AnimatedText({
   text = "Grow your business with a new website.",
   style = {},
+  charStyle = {},
 }) {
   return (
     <>
@@ -33,7 +34,11 @@ export default function AnimatedText({
                     key={i2}
                     className="char"
                     data-char="G"
-                    style={{ "--char-index": i + i2, textTransform: "none" }}
+                    style={{
+                      "--char-index": i + i2,
+                      textTransform: "none",
+                      ...charStyle,
+                    }}
                   >
                     {elm2}
                   </span>

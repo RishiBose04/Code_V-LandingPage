@@ -28,24 +28,13 @@ export default function Header2({ links }) {
             Code_
           </span>
 
-          {/* Light Mode Logo */}
           <Image
-            src="/assets/images/Code_V_Logo.png"
+            src="/assets/images/VLogo.png"
             alt="Code_V Logo"
             width={30}
             height={30}
             style={{ width: 30, height: "auto" }}
-            className="light-mode-logo inline-block align-middle"
-          />
-
-          {/* Dark Mode Logo */}
-          <Image
-            src="/assets/images/Code_V_LogoEdited.png"
-            alt="Code_V Logo"
-            width={30}
-            height={30}
-            style={{ width: 30, height: "auto" }}
-            className="dark-mode-logo inline-block align-middle"
+            className="inline-block align-middle"
           />
         </Link>
       </div>

@@ -110,10 +110,6 @@ export default function Home2({ onePage = false, dark = false }) {
         </div>
       </section>
 
-      <div className="page-section overflow-hidden">
-        <Experience />
-      </div>
-
       <section
         className={`page-section scrollSpysection ${
           dark ? "bg-dark-1 light-content" : ""

@@ -7,13 +7,13 @@ export default function Contact({ heading }) {
         <div className="col-lg-5 mb-md-70">
           <h2 className="section-title-medium font-alt text-outline-cont mt-20 mb-50 mb-md-30">
             <span className="text-outline-2">
-              {heading ? heading : "Contact Me"}
+              {heading ? heading : "Contact Us"}
             </span>
             <span className="text-outline-1">
-              {heading ? heading : "Contact Me"}
+              {heading ? heading : "Contact Us"}
             </span>
             <span className="text-outline">
-              {heading ? heading : "Contact Me"}
+              {heading ? heading : "Contact Us"}
             </span>
           </h2>
           <p className="section-text mb-60 mb-md-40 mb-sm-30">
