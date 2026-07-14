@@ -164,7 +164,6 @@ export const portfolios2 = [
     imageUrl: "/assets/images/Fish Out/GameIcon1.png",
     gallery: [
       "/assets/images/Fish Out/GameIcon1.png",
-      "/assets/images/Fish Out/PosterFishOut1.png",
       "/assets/images/Fish Out/Poster01Part05.png",
       "/assets/images/Fish Out/Poster02Part02.png",
       "/assets/images/Fish Out/Poster03Part02.png",
