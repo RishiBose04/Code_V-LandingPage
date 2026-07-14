@@ -169,15 +169,35 @@ export const portfolios2 = [
       "/assets/images/Fish Out/Poster02Part02.png",
       "/assets/images/Fish Out/Poster03Part02.png",
       "/assets/images/Fish Out/Poster04part2.png",
-      
+
     ],
     title: "Fish Out",
-    
+
     description:
       "An immersive underwater adventure game by Code V. Dive deep, explore vibrant ocean worlds, and survive.",
     externalUrl:
       "https://play.google.com/store/apps/details?id=com.Code_V.ProjectFish",
     categories: ["development"],
+  },
+  // 👇 ADD YOUR NEW PROJECT HERE 👇
+  {
+    id: 17,  // Use next sequential ID
+    imageUrl: "/assets/images/Donut Sort/DonutSortIcon.png",  // Main thumbnail
+    gallery: [
+      "/assets/images/Donut Sort/Playstore1.png",
+      "/assets/images/Donut Sort/Poster01.1.png",
+      "/assets/images/Donut Sort/Poster001.png",
+      "/assets/images/Donut Sort/Poster002.png",
+      "/assets/images/Donut Sort/Poster003.png",
+      "/assets/images/Donut Sort/Poster004.png",
+      "/assets/images/Donut Sort/Poster005.png",
+
+      // Add more gallery images as needed
+    ],
+    title: "Donut Sort",
+    description: "Step into the sweetest bakery puzzle adventure! Sort colorful donuts into the correct trays, solve clever puzzles, unlock exciting levels, and enjoy a relaxing gameplay experience designed for everyone.",
+    externalUrl: "https://play.google.com/store/apps/details?id=com.Code_V.donutsort",  // Optional: external link (website, app store, etc.)
+    categories: ["development"],  // or ["branding"], ["design"], etc.
   },
 ];
 

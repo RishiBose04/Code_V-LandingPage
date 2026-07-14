@@ -163,7 +163,7 @@ export default async function BoldPortfolioSinglePageDark(props) {
               <hr className="white opacity-015 mt-0 mb-0" />
 
               <section className="page-section bg-dark-1 light-content">
-                <RelatedProject9 />
+                <RelatedProject9 currentProjectId={portfolioItem.id} />
               </section>
             </main>
 
