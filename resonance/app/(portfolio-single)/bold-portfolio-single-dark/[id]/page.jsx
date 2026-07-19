@@ -370,6 +370,214 @@ export default async function BoldPortfolioSinglePageDark(props) {
         .opacity-015 {
           opacity: 0.15;
         }
+
+        /* Vision & Mission Section Styling */
+        .vision-mission-wrapper {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 40px;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+
+        @media (min-width: 992px) {
+          .vision-mission-wrapper {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 60px;
+          }
+        }
+
+        /* Vision Card */
+        .vision-card {
+          position: relative;
+          background: linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(37, 99, 235, 0.04) 100%);
+          backdrop-filter: blur(20px);
+          -webkit-backdrop-filter: blur(20px);
+          border: 1px solid rgba(59, 130, 246, 0.2);
+          border-radius: 32px;
+          padding: 50px 40px;
+          overflow: hidden;
+          transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .vision-card:hover {
+          transform: translateY(-8px);
+          border-color: rgba(59, 130, 246, 0.4);
+          box-shadow: 0 20px 60px rgba(59, 130, 246, 0.2);
+        }
+
+        .vision-card__icon {
+          width: 80px;
+          height: 80px;
+          background: linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, rgba(37, 99, 235, 0.1) 100%);
+          border-radius: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 30px;
+          border: 1px solid rgba(59, 130, 246, 0.3);
+          transition: all 0.4s ease;
+        }
+
+        .vision-card:hover .vision-card__icon {
+          background: linear-gradient(135deg, rgba(59, 130, 246, 0.3) 0%, rgba(37, 99, 235, 0.2) 100%);
+          transform: scale(1.1) rotate(5deg);
+        }
+
+        .vision-card__icon svg {
+          color: #60a5fa;
+          transition: all 0.4s ease;
+        }
+
+        .vision-card:hover .vision-card__icon svg {
+          color: #3b82f6;
+        }
+
+        .vision-card__title {
+          font-size: 32px;
+          font-weight: 700;
+          color: #ffffff;
+          margin-bottom: 20px;
+          letter-spacing: -0.5px;
+          background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+
+        .vision-card__text {
+          font-size: 18px;
+          line-height: 1.8;
+          color: rgba(255, 255, 255, 0.8);
+          margin: 0;
+        }
+
+        .vision-card__glow {
+          position: absolute;
+          top: -100px;
+          right: -100px;
+          width: 300px;
+          height: 300px;
+          background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+          pointer-events: none;
+          transition: all 0.5s ease;
+        }
+
+        .vision-card:hover .vision-card__glow {
+          opacity: 1.5;
+          transform: scale(1.2);
+        }
+
+        /* Mission Card */
+        .mission-card {
+          position: relative;
+          background: linear-gradient(135deg, rgba(168, 85, 247, 0.08) 0%, rgba(147, 51, 234, 0.04) 100%);
+          backdrop-filter: blur(20px);
+          -webkit-backdrop-filter: blur(20px);
+          border: 1px solid rgba(168, 85, 247, 0.2);
+          border-radius: 32px;
+          padding: 50px 40px;
+          overflow: hidden;
+          transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .mission-card:hover {
+          transform: translateY(-8px);
+          border-color: rgba(168, 85, 247, 0.4);
+          box-shadow: 0 20px 60px rgba(168, 85, 247, 0.2);
+        }
+
+        .mission-card__icon {
+          width: 80px;
+          height: 80px;
+          background: linear-gradient(135deg, rgba(168, 85, 247, 0.2) 0%, rgba(147, 51, 234, 0.1) 100%);
+          border-radius: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 30px;
+          border: 1px solid rgba(168, 85, 247, 0.3);
+          transition: all 0.4s ease;
+        }
+
+        .mission-card:hover .mission-card__icon {
+          background: linear-gradient(135deg, rgba(168, 85, 247, 0.3) 0%, rgba(147, 51, 234, 0.2) 100%);
+          transform: scale(1.1) rotate(-5deg);
+        }
+
+        .mission-card__icon svg {
+          color: #c084fc;
+          transition: all 0.4s ease;
+        }
+
+        .mission-card:hover .mission-card__icon svg {
+          color: #a855f7;
+        }
+
+        .mission-card__title {
+          font-size: 32px;
+          font-weight: 700;
+          color: #ffffff;
+          margin-bottom: 20px;
+          letter-spacing: -0.5px;
+          background: linear-gradient(135deg, #c084fc 0%, #a855f7 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+
+        .mission-card__text {
+          font-size: 18px;
+          line-height: 1.8;
+          color: rgba(255, 255, 255, 0.8);
+          margin: 0;
+        }
+
+        .mission-card__glow {
+          position: absolute;
+          bottom: -100px;
+          left: -100px;
+          width: 300px;
+          height: 300px;
+          background: radial-gradient(circle, rgba(168, 85, 247, 0.15) 0%, transparent 70%);
+          pointer-events: none;
+          transition: all 0.5s ease;
+        }
+
+        .mission-card:hover .mission-card__glow {
+          opacity: 1.5;
+          transform: scale(1.2);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+          .vision-card,
+          .mission-card {
+            padding: 40px 30px;
+          }
+
+          .vision-card__title,
+          .mission-card__title {
+            font-size: 26px;
+          }
+
+          .vision-card__text,
+          .mission-card__text {
+            font-size: 16px;
+          }
+
+          .vision-card__icon,
+          .mission-card__icon {
+            width: 70px;
+            height: 70px;
+          }
+
+          .vision-card__icon svg,
+          .mission-card__icon svg {
+            width: 40px;
+            height: 40px;
+          }
+        }
       `}</style>
     </>
   );
