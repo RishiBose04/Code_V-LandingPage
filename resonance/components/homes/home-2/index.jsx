@@ -160,7 +160,7 @@ export default function Home2({ onePage = false, dark = false }) {
               </div>
               <h3 className="mission-card__title">Mission</h3>
               <p className="mission-card__text">
-                We build fun, innovative, and high-quality games that deliver memorable experiences across mobile and PC.
+                We build fun, innovative, and high-quality games that deliver memorable experiences across mobile, PC and Console.
               </p>
               <div className="mission-card__glow"></div>
             </div>
